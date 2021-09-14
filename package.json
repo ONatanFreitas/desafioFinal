@@ -1,0 +1,28 @@
+{
+  "name": "desafiofinal",
+  "version": "1.0.0",
+  "description": "Projeto final para conclusão do curso Cappacita Dev.",
+  "main": "src/server.js",
+  
+
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cappacita",
+    "desafiofinal",
+    "cappacitadev"
+  ],
+  "author": "onatanfreitas",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
