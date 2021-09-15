@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "Projeto final para conclusão do curso Cappacita Dev.",
   "main": "src/server.js",
-  
-
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
@@ -20,6 +18,8 @@
   "dependencies": {
     "axios": "^0.21.4",
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "create-react-app": "^1.2.1",
     "express": "^4.17.1"
   },
   "devDependencies": {
