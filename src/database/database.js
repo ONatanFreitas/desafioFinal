@@ -14,7 +14,7 @@ async function mostrarDadosFilmes (){
                 titulo: item.title,
                 sinopse: item.overview,
                 pontuacao: item.vote_average,
-                imagem: `https://api.themoviedb.org/3${item.backdrop_path}`            
+                imagem: `https://image.tmdb.org/t/p/w500/${item.backdrop_path}`            
 
             })
         

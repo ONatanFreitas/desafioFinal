@@ -7,44 +7,18 @@
     <title>Road to Apokolips War</title>
 </head>
 <body>
+    <header>
+        <h1>Road to Apokolips War</h1>
+        
+
+
+
+    </header>
     <main>
 
 
     </main>
-    <script>
-    
-        async function getContent() {
-            try {
-                const response = await fetch('http://localhost:3003/filmes')    
-                
-                const data = await response.json()
-    
-                show(data)
-    
-            } catch (error) {
-                console.error(error)
-            }
-        }
-    
-        getContent()
-    
-        function show(filmes){
-    
-            let output = ''
-    
-            for(let filme of filmes){
-                output += `<ul>
-                                <li>${filme.titulo}</li>
-                                <li>${filme.sinopse}</li>
-                                <li>${filme.pontuacao}</li>
-                            </ul>`
-            }
-    
-            document.querySelector('main').innerHTML = output
-    
-        }
-    
-    </script>
+    <script src="./src/scriptListaFilmes.js"></script>
 </body>
 
 </html>
