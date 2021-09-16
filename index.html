@@ -10,9 +10,46 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
     crossorigin="anonymous">  
     <link rel="stylesheet" href="./styles.css">
+
     <script src="./src/scriptListaFilmes.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
+    crossorigin="anonymous"></script>       
+
 </head>
 <body>
+<!-- painel de detalhes / bootstrap -->
+    <div class="modal fade" id="painel-filme">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="painel-hero">
+                    <h1 class="text-white"> Título do filme</h1>
+                    <div class="col-12 painel-hero-infos"></div>
+                </div>
+                <div class="modal-info">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-7">
+                                <p class="filme-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur non earum impedit incidunt accusantium quibusdam repudiandae ipsum maxime fuga a, qui corrupti dolor veniam dolore autem repellendus amet praesentium quaerat.
+                                Deleniti obcaecati voluptas adipisci accusamus, ea modi alias aperiam doloremque odio illo soluta a quae ut sed temporibus ad, provident vitae commodi! Explicabo quaerat similique doloremque nihil distinctio quis ratione!
+                            </p>
+                            </div>
+                            <div class="col-5">
+                                <p class="filme-votos">
+                                    #votos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- topo / logo / nav bar -->
     <div class="container-fluid">
         <header class="row">
@@ -60,25 +97,16 @@
                 </div>
             </div>
             <div class="col-12">
-                <ul class="lista-filmes">
-                    <li class="filme">
-                        <!-- falta puxar a imagem de cada filme / criar ID -->
-                        <img id="" src="https://image.tmdb.org/t/p/w500//iSLXnEeZpkZQnxeCzp9ZjdhvAKK.jpg" class="img-fluid">
-                        <div class="filme-info">
-                            <!-- div class="col-12"></div / criar ID -->
-                            <p>Título:<text id="">título do filme</text></p>
-
-                        </div>
-                    </li>
+                <!-- aqui entra os filmes do script -->
+                <ul id="lista-filmes">
+                                        
                 </ul>
             </div>
         </section>
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
-    crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

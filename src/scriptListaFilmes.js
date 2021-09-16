@@ -20,21 +20,19 @@ function show(filmes){
 
     for(let filme of filmes){
         output += `
-        <div class="filmes-info">
-            <figure>
-                 <img src=${filme.imagem} alt="${filme.titulo}">
-            </figure>
-            
-            <ul>
+        <li class="filme" data-bs-toggle="modal" data-bs-target="#painel-filme">                        
+                        <img class="img-fluid" src=${filme.imagem} />
+                        <div class="filme-info">
+                            <!-- div class="col-12" -->
+                                
+                            
+                            <p> <text id="">${filme.titulo}</text></p>
 
-                <li>${filme.titulo}</li>
-                <li>${filme.pontuacao}</li>
-                <li>${filme.sinopse}</li>                
-            </ul>
-        </div>`
+                        </div>
+                    </li>`
         
     }
 
-    document.querySelector('main').innerHTML = output
+    document.getElementById('lista-filmes').innerHTML = output
 
 }
