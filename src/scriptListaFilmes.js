@@ -36,19 +36,20 @@ function show(filmes){
         <div class="modal fade" id="filme${filme.id}">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="painel-hero">
+                <div class="painel-hero" style="background-image: url(${filme.imagem});">
                     <h1 class="text-white">${filme.titulo}</h1>
                     
                 </div>
                 <div class="painel-info">
                     <div class="container">
                         <div class="descricao_votos" class="row">
+                        <div class="col-2">
+                                <p class="filme-votos">${filme.pontuacao}</p>
+                            </div>
                             <div class="col-6">
                                 <p class="filme-descricao">${filme.sinopse}</p>
                             </div>
-                            <div class="col-6">
-                                <p class="filme-votos">${filme.pontuacao}</p>
-                            </div>
+                            
                         </div>
                         <br>
                         

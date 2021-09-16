@@ -69,6 +69,7 @@ header img {
 }
 
 #cover_description h1 {
+    text-shadow: 0.1rem 0.1em 0.2em #171717;
     margin-bottom: 20px;
 }
 
@@ -171,7 +172,7 @@ section:hover {
 /* para adicionar no script git getElement .style.background-image */
 .painel-hero {
     height: 300px;
-    background-image: url(./assets/ww_sm_cb-cover.png);
+    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -194,7 +195,7 @@ section:hover {
 
 .painel-hero h1{
     width: 250px;
-    
+    text-shadow: 0.1rem 0.1em 0.2em #171717;
     margin-top: 40px;
     position: relative;
 
@@ -203,17 +204,21 @@ section:hover {
 .filme-descricao{
     font-size: 15px;
     color: #fff;
+    
+    margin-left: 10px;
 }
 
 .filme-votos {
     font-size: 20px;
     color: #fff;
+    margin-left: 10px;
     
 }
 
 .comentarios {
     list-style: none;
     padding: 0;
+    
 }
 
 .comentarios li {
