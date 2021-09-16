@@ -5,20 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Road to Apokolips War</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+    crossorigin="anonymous">  
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./src/scriptListaFilmes.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Road to Apokolips War</h1>
-        
+    <!-- topo / logo / nav bar -->
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-2">
+                <img src="./assets/408x161-powered-by-rectangle-green-bb.png">
+            </div>            
+            <div class="col-8">
+                <ul class="nav_bar">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre mim</a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <!-- título / cover / descrição -->
+    <div id="cover" class="container-fluid">
+        <div class="container">
+            <div id="cover_description" class="row">
+                <div class="col-6">
+                    <h1 class="text-white"><img src="./assets/DC-Universe-logo-vector.png" />Road to Apokolips War</h1>
+                    <p class="text-white">A lista de filmes que pavimenta o caminho para Liga da Justiça Sombria: Guerra de Apokolip‪s‬. 
+                        Lista baseada no  artigo "How to watch DC’s New 52 films in order" de Alex Wiggan, no site I'll Get Drive-thru.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- lista de filmes -->
+    <div id="lista-principal">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">Lista de filmes</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="lista-filmes">
+                    <li class="filme">
+                        <!-- falta puxar a imagem de cada filme / criar ID -->
+                        <img id="" src="https://image.tmdb.org/t/p/w500//iSLXnEeZpkZQnxeCzp9ZjdhvAKK.jpg" class="img-fluid">
+                        <div class="filme-info">
+                            <!-- div class="col-12"></div / criar ID -->
+                            <p>Título:<text id="">título do filme</text></p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
 
 
-
-    </header>
-    <main>
-
-
-    </main>
-    <script src="./src/scriptListaFilmes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

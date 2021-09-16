@@ -11,6 +11,7 @@ async function mostrarDadosFilmes (){
         for (var i = 0; i < response.length; i++) {
             const item = response[i]
             dadosFilmes.push({
+                id: item.id,
                 titulo: item.title,
                 sinopse: item.overview,
                 pontuacao: item.vote_average,

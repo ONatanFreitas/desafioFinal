@@ -5,6 +5,7 @@ async function getContent() {
         const data = await response.json()
 
         show(data)
+        return data
 
     } catch (error) {
         console.error(error)
@@ -19,18 +20,19 @@ function show(filmes){
 
     for(let filme of filmes){
         output += `
+        <div class="filmes-info">
             <figure>
                  <img src=${filme.imagem} alt="${filme.titulo}">
             </figure>
-            <figcaption>
-                <p>${filme.titulo}</p>
-            </figcaption>
+            
             <ul>
 
                 <li>${filme.titulo}</li>
-                <li>${filme.sinopse}</li>
                 <li>${filme.pontuacao}</li>
-            </ul>`
+                <li>${filme.sinopse}</li>                
+            </ul>
+        </div>`
+        
     }
 
     document.querySelector('main').innerHTML = output
