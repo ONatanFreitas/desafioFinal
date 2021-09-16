@@ -179,7 +179,7 @@ section:hover {
     margin-bottom: 30px;
 }
 
-.painel-hero::after{
+/*.painel-hero::after{
     content: '';
     width: 100%;
     height: 200px;
@@ -189,8 +189,8 @@ section:hover {
         rgba(23, 23, 23, 0) 0%, #171717 100%);
     position: absolute;
     left: 0;
-    margin-top: -25px;
-}
+    margin-top: -55px;
+}*/
 
 .painel-hero h1{
     width: 250px;
@@ -209,4 +209,17 @@ section:hover {
     font-size: 20px;
     color: #fff;
     
+}
+
+.comentarios {
+    list-style: none;
+    padding: 0;
+}
+
+.comentarios li {
+    padding: 20px;
+}
+
+.comentarios li p {
+    font-size: 13px;
 }
