@@ -20,7 +20,9 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "create-react-app": "^1.2.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "knex": "^0.95.11",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"

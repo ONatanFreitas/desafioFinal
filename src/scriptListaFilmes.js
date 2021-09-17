@@ -58,17 +58,12 @@ function show(filmes){
             </div>
         </div>
         </div>
-        `
-        imagemCoverHero = `${filme.imagem}`
-        
+        `        
     }
     
     document.getElementById('lista-filmes').innerHTML = output
 
-    document.getElementById('modal-filmes').innerHTML = filmesDetalhes
-
-    //document.getElementsByClassName(painel-hero).style.background-image = url(imagemCoverHero)
-
+    document.getElementById('modal-filmes').innerHTML = filmesDetalhes 
 
     
 }
