@@ -1,3 +1,7 @@
+
+
+
+// puxa os dados do server e roda a função que injeta no html
 async function getContent() {
     try {
         const response = await fetch('http://localhost:5005/filmes')    
@@ -14,6 +18,7 @@ async function getContent() {
 
 getContent()
 
+// pega os dados do json vindo por fetch e injeta no html
 function show(filmes){
 
     let output = ''

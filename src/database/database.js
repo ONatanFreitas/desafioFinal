@@ -1,7 +1,8 @@
 var axios = require('axios')
 
-const apiKey = '7923c94d78158bc558ec678088afdd9a'
+const apiKey = process.env.TMDB_API_SECRET
 
+// puxa os dados dos filmes
 async function mostrarDadosFilmes (){
     try {
         const response = (await axios.get(`https://api.themoviedb.org/3/list/7107576?api_key=${apiKey}&language=pt-BR`)).data.items
@@ -29,7 +30,7 @@ async function mostrarDadosFilmes (){
        
 }
 
-
+// puxa os dados da lista em si
     async function dadosListaFilmes (){
     try {
         const response = (await axios.get(`https://api.themoviedb.org/3/list/7107576?api_key=${apiKey}&language=pt-BR`)).data
