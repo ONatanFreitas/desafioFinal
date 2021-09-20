@@ -9,6 +9,8 @@ async function mostrarDadosFilmes (){
         
         const dadosFilmes = []
         
+        
+
         for (var i = 0; i < response.length; i++) {
             const item = response[i]
             dadosFilmes.push({
@@ -30,25 +32,4 @@ async function mostrarDadosFilmes (){
        
 }
 
-// puxa os dados da lista em si
-    async function dadosListaFilmes (){
-    try {
-        const response = (await axios.get(`https://api.themoviedb.org/3/list/7107576?api_key=${apiKey}&language=pt-BR`)).data
-        
-        const dadosLista = []
-        dadosLista.push({
-            nome: response.name,
-            descricao: response.description,
-            quantidade_filmes: response.item_count
-        })
-        
-        
-        return dadosLista
-
-    } catch (error) {
-        console.error(error)
-    }
-       
-}
-
-module.exports = { mostrarDadosFilmes, dadosListaFilmes }
+module.exports = { mostrarDadosFilmes }
