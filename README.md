@@ -7,6 +7,8 @@ Aqui eu usei os conceitos que aprendemos nas aulas de introdução a programaç�
 
 Para rodar esse projeto você vai precisar de uma IDE (recomendo Visual Studio Code) e depois rodar o arquivo index.html no seu navegador de preferência.
 
+Para informações de como gerar uma chave API TMDB, acesse (aqui)[https://developers.themoviedb.org/3/getting-started/introduction]
+
 Uma vez baixado o repositório do projeto em seu terminal, acesse a pasta:
 
 ### `cd desafiofinal`
