@@ -11,11 +11,11 @@ Para informações de como gerar uma chave API TMDB, acesse https://developers.t
 
 Uma vez baixado o repositório do projeto em seu terminal, acesse a pasta:
 
-### `cd desafiofinal`
+### `$ cd desafiofinal`
 
 Instale as dependências:
 
-### `npm install`
+### `$ npm install`
 
 Execute a aplicação:
 
